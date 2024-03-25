@@ -4,15 +4,6 @@ import yaml
 import json
 import requests
 
-with open("cred.yml", "r") as stream:
-    try:
-        cred = yaml.safe_load(stream)
-    except yaml.YAMLError as exc:
-        print(exc)
-
-token = cred["BOT_TOKEN"]
-openai.api_key = cred["OPENAI_API_TOKEN"]
-
 with open(".cred.yml", "r") as stream:
     try:
         cred = yaml.safe_load(stream)
