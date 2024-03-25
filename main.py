@@ -1,12 +1,16 @@
 import openai
 import discord
-from dotenv import load_dotenv
 import os
-import re
+import yaml
 
-load_dotenv()
-token = os.getenv("TOKEN")
-openai.api_key = os.getenv("OPENAI_API_KEY")
+with open(".cred.yml", "r") as stream:
+    try:
+        cred = yaml.safe_load(stream)
+    except yaml.YAMLError as exc:
+        print(exc)
+
+token = cred['BOT_TOKEN']
+openai.api_key = cred['OPENAI_API_TOKEN']
 
 
 # current_conv
