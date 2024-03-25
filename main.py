@@ -6,9 +6,6 @@ from langchain_community.document_loaders import BraveSearchLoader
 import requests
 
 
-
-
-
 with open(".cred.yml", "r") as stream:
     try:
         cred = yaml.safe_load(stream)
