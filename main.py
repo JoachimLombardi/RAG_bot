@@ -93,7 +93,7 @@ async def on_message(message):
             reply = chatgpt_reply(current_conv)
             current_conv.append({"role": "assistant", "content": reply})
         await message.reply(reply, mention_author=True)
-        # if the current_conv contains more than 10 messages, pop 2 messages
+        # if the current_conv contains more than 10 messages, pop 3 messages
         if len(current_conv) > 10:
             current_conv.pop(0)
             current_conv.pop(0)

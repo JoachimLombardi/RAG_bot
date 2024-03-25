@@ -1,1 +1,364 @@
-{"query": {"original": "QUi est macron <@1221758264765583392>", "show_strict_warning": false, "is_navigational": false, "local_decision": "drop", "local_locations_idx": 0, "is_news_breaking": false, "spellcheck_off": false, "country": "us", "bad_results": false, "should_fallback": false, "postal_code": "", "city": "", "header_country": "", "more_results_available": true, "state": ""}, "mixed": {"type": "mixed", "main": [{"type": "web", "index": 0, "all": false}, {"type": "web", "index": 1, "all": false}, {"type": "web", "index": 2, "all": false}, {"type": "web", "index": 3, "all": false}, {"type": "web", "index": 4, "all": false}, {"type": "web", "index": 5, "all": false}, {"type": "web", "index": 6, "all": false}, {"type": "web", "index": 7, "all": false}, {"type": "web", "index": 8, "all": false}, {"type": "web", "index": 9, "all": false}], "top": [], "side": []}, "type": "search", "web": {"type": "search", "results": [{"title": "Emmanuel Macron - Wikipedia", "url": "https://en.wikipedia.org/wiki/Emmanuel_Macron", "is_source_local": false, "is_source_both": false, "description": "A liberal, progressive political movement that gathered huge media coverage when it was first established, the party and <strong>Macron</strong> were both reprimanded by President Hollande and the question of <strong>Macron</strong>&#x27;s loyalty to the government was raised. Several MEPs spoke out in support for the movement though ...", "page_age": "2014-08-27T08:15:41", "profile": {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Emmanuel_Macron", "long_name": "en.wikipedia.org", "img": "https://imgs.search.brave.com/0kxnVOiqv-faZvOJc7zpym4Zin1CTs1f1svfNZSzmfU/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw"}, "language": "en", "family_friendly": true, "type": "search_result", "subtype": "generic", "meta_url": {"scheme": "https", "netloc": "en.wikipedia.org", "hostname": "en.wikipedia.org", "favicon": "https://imgs.search.brave.com/0kxnVOiqv-faZvOJc7zpym4Zin1CTs1f1svfNZSzmfU/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw", "path": "\u203a wiki  \u203a Emmanuel_Macron"}, "age": "August 27, 2014"}, {"title": "Emmanuel Macron : Actualit\u00e9s et infos du pr\u00e9sident de la ...", "url": "https://www.20minutes.fr/politique/emmanuel-macron/", "is_source_local": false, "is_source_both": false, "description": "Consultez toute l&#x27;actualit\u00e9 sur le sujet Emmanuel <strong>Macron</strong> en direct sur 20 Minutes. Retrouvez l&#x27;ensemble de nos derniers articles, directs, photos et vid\u00e9os au sein de notre rubrique.", "profile": {"name": "www.20minutes.fr", "url": "https://www.20minutes.fr/politique/emmanuel-macron/", "long_name": "20minutes.fr", "img": "https://imgs.search.brave.com/eRM0SRbwDveM-BZWal0-h5y435VoNEa_JEUa8KzHOS8/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNmNkOGJhM2Q1/MmI2NGQwMjk5ZTc2/MGY2NGQ3YTYzMjhh/NmYwY2U0MGMzOTZj/NjRlN2VmNDBjYWMw/MTg4MTUwMC93d3cu/MjBtaW51dGVzLmZy/Lw"}, "language": "fr", "family_friendly": true, "type": "search_result", "subtype": "generic", "meta_url": {"scheme": "https", "netloc": "20minutes.fr", "hostname": "www.20minutes.fr", "favicon": "https://imgs.search.brave.com/eRM0SRbwDveM-BZWal0-h5y435VoNEa_JEUa8KzHOS8/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNmNkOGJhM2Q1/MmI2NGQwMjk5ZTc2/MGY2NGQ3YTYzMjhh/NmYwY2U0MGMzOTZj/NjRlN2VmNDBjYWMw/MTg4MTUwMC93d3cu/MjBtaW51dGVzLmZy/Lw", "path": "  \u203a politique  \u203a emmanuel macron"}, "thumbnail": {"src": "https://imgs.search.brave.com/WmvmNE1lxzx0l1vAXkqJ6Xbf_WF-K098xADt4z_6ywE/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9pbWcu/MjBtbi5mci9valZa/eDdKaVJKMmdodnhs/dlFGclB5ay8xNDQ0/eDkyMF90b3BzaG90/LWlzcmFlbGktdHJv/b3BzLWdhdGhlci1u/ZWFyLXRoZS1lcmV6/LWNyb3NzaW5nLWR1/cmluZy1hLXJhbGx5/LWJ5LXJpZ2h0LXdp/bmctYWN0aXZpc3Rz/LWNhbGxpbmctZm9y/LXRoZS1idWlsZGlu/Zy1vZi1pc3JhZWxp/LXNldHRsZW1lbnRz/LWluLWdhemEtb24t/ZmVicnVhcnktMjkt/MjAyNC1hbWlkLW9u/Z29pbmctYmF0dGxl/cy1iZXR3ZWVuLWlz/cmFlbC1hbmQtdGhl/LXBhbGVzdGluaWFu/LW1pbGl0YW50LWdy/b3VwLWhhbWFzLXBo/b3RvLWJ5LW9yZW4t/eml2LWFmcA", "original": "https://img.20mn.fr/ojVZx7JiRJ2ghvxlvQFrPyk/1444x920_topshot-israeli-troops-gather-near-the-erez-crossing-during-a-rally-by-right-wing-activists-calling-for-the-building-of-israeli-settlements-in-gaza-on-february-29-2024-amid-ongoing-battles-between-israel-and-the-palestinian-militant-group-hamas-photo-by-oren-ziv-afp", "logo": false}}, {"title": "Emmanuel Macron | \u00c9lys\u00e9e", "url": "https://www.elysee.fr/en/emmanuel-macron", "is_source_local": false, "is_source_both": false, "description": "Find the official biography of Emmanuel <strong>Macron</strong>, President of the Republic since 2017, re-elected to this function on April 24, 2022.", "profile": {"name": "Elysee", "url": "https://www.elysee.fr/en/emmanuel-macron", "long_name": "elysee.fr", "img": "https://imgs.search.brave.com/xHVzZjTgH7GVOnozdB_Xqbpj_ZJThyLwSY4ua1EZcU8/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzA1OTNmM2M5/ZGQ3NDZkMGI4NWEx/YjM4NmI0YTdjMWEz/ZDkyYTA5ZDE1YTFm/NzZjMWE0MzhjZDY1/Y2Q5ZjkwZi93d3cu/ZWx5c2VlLmZyLw"}, "language": "en", "family_friendly": true, "type": "search_result", "subtype": "generic", "meta_url": {"scheme": "https", "netloc": "elysee.fr", "hostname": "www.elysee.fr", "favicon": "https://imgs.search.brave.com/xHVzZjTgH7GVOnozdB_Xqbpj_ZJThyLwSY4ua1EZcU8/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzA1OTNmM2M5/ZGQ3NDZkMGI4NWEx/YjM4NmI0YTdjMWEz/ZDkyYTA5ZDE1YTFm/NzZjMWE0MzhjZDY1/Y2Q5ZjkwZi93d3cu/ZWx5c2VlLmZyLw", "path": "\u203a en  \u203a emmanuel-macron"}, "thumbnail": {"src": "https://imgs.search.brave.com/pWzEExiOCYyeaZHyvraCi7I5w_MmfzNBmv5bKXwV7O0/rs:fit:200:200:1/g:ce/aHR0cHM6Ly93d3cu/ZWx5c2VlLmZyL2Nk/bi1jZ2kvaW1hZ2Uv/d2lkdGg9ODAwJTJD/aGVpZ2h0PTQyMCUy/Q3RyaW09Mjg3JTNC/MCUzQjk1MCUzQjAl/MkNmaXQ9Y292ZXIv/aW1hZ2VzL2RlZmF1/bHQvMDAwMS8xMC9j/OTRjYTVjYmM5OTRh/M2EwZDQ5OTQzNTRj/OWE0YWMzNDA3ZDZh/ZDg0LmpwZWc", "original": "https://www.elysee.fr/cdn-cgi/image/width=800%2Cheight=420%2Ctrim=287%3B0%3B950%3B0%2Cfit=cover/images/default/0001/10/c94ca5cbc994a3a0d4994354c9a4ac3407d6ad84.jpeg", "logo": false}}, {"title": "Emmanuel Macron (@EmmanuelMacron) \u00b7 X", "url": "https://twitter.com/EmmanuelMacron", "is_source_local": false, "is_source_both": false, "description": "The latest tweets from Emmanuel <strong>Macron</strong> (@EmmanuelMacron)", "profile": {"name": "X", "url": "https://twitter.com/EmmanuelMacron", "long_name": "twitter.com", "img": "https://imgs.search.brave.com/Zq483bGX0GnSgym-1P7iyOyEDX3PkDZSNT8m56F862A/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2MxOTUxNzhj/OTY1ZTQ3N2I0MjJk/MTY5NGM0MTRlYWVi/MjU1YWE2NDUwYmQ2/YTA2MDFhMDlkZDEx/NTAzZGNiNi90d2l0/dGVyLmNvbS8"}, "language": "en", "family_friendly": true, "type": "search_result", "subtype": "generic", "meta_url": {"scheme": "https", "netloc": "twitter.com", "hostname": "twitter.com", "favicon": "https://imgs.search.brave.com/Zq483bGX0GnSgym-1P7iyOyEDX3PkDZSNT8m56F862A/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2MxOTUxNzhj/OTY1ZTQ3N2I0MjJk/MTY5NGM0MTRlYWVi/MjU1YWE2NDUwYmQ2/YTA2MDFhMDlkZDEx/NTAzZGNiNi90d2l0/dGVyLmNvbS8", "path": "\u203a EmmanuelMacron"}}, {"title": "Emmanuel Macron | Biography, Political Party, Age, Presidency, ...", "url": "https://www.britannica.com/biography/Emmanuel-Macron", "is_source_local": false, "is_source_both": false, "description": "Emmanuel <strong>Macron</strong>, French banker and politician who was elected president of France in 2017. <strong>Macron</strong> was the first person in the history of the Fifth Republic to win the presidency without the backing of either the Socialists or the Gaullists, and he was France\u2019s youngest head of state since ...", "page_age": "2017-05-12T00:00:00", "profile": {"name": "Britannica", "url": "https://www.britannica.com/biography/Emmanuel-Macron", "long_name": "britannica.com", "img": "https://imgs.search.brave.com/hcLf2uAEj_yDbSzYRgdkKMQIWeIcfmsuchdJkpCh2_g/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzJmYzgxOWRk/Y2FhNWI2MzQzMjQ4/MWVhZDZhNGY3ZjY0/MDgxZTM3YWU5MzYz/NGU2MzM3Y2Y2YTYz/M2IyM2Y0NC93d3cu/YnJpdGFubmljYS5j/b20v"}, "language": "en", "family_friendly": true, "type": "search_result", "subtype": "article", "meta_url": {"scheme": "https", "netloc": "britannica.com", "hostname": "www.britannica.com", "favicon": "https://imgs.search.brave.com/hcLf2uAEj_yDbSzYRgdkKMQIWeIcfmsuchdJkpCh2_g/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzJmYzgxOWRk/Y2FhNWI2MzQzMjQ4/MWVhZDZhNGY3ZjY0/MDgxZTM3YWU5MzYz/NGU2MzM3Y2Y2YTYz/M2IyM2Y0NC93d3cu/YnJpdGFubmljYS5j/b20v", "path": "  \u203a politics, law & government  \u203a world leaders  \u203a presidents & heads of states"}, "thumbnail": {"src": "https://imgs.search.brave.com/uYd3tSO6ClS8mp0rp5rQdzxUtPPMiRFT8-Zh7Uj2fsM/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9jZG4u/YnJpdGFubmljYS5j/b20vNzQvMTk1Mzc0/LTA1MC1BN0IxM0RD/QS9FbW1hbnVlbC1N/YWNyb24tMjAxNy5q/cGc", "original": "https://cdn.britannica.com/74/195374-050-A7B13DCA/Emmanuel-Macron-2017.jpg", "logo": false}, "age": "May 12, 2017"}, {"title": "Emmanuel Macron (@emmanuelmacron)", "url": "https://www.instagram.com/emmanuelmacron/", "is_source_local": false, "is_source_both": false, "description": "See Instagram photos and videos from Emmanuel <strong>Macron</strong> (@emmanuelmacron)", "profile": {"name": "Instagram", "url": "https://www.instagram.com/emmanuelmacron/", "long_name": "instagram.com", "img": "https://imgs.search.brave.com/7A-upEbZhKg3zcLw2J4VdqF63kB8ow6z3oq0uJL0Xlw/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2RiYmJiZDA4/NTBkNWQ0ZmQ3NDE5/OGUxOGI4NzE5ZDI0/Zjk0M2ExMDkzZmJm/ODA0MmJiMzkwZjMy/ZDM4YWVkOS93d3cu/aW5zdGFncmFtLmNv/bS8"}, "language": "en", "family_friendly": true, "type": "search_result", "subtype": "generic", "meta_url": {"scheme": "https", "netloc": "instagram.com", "hostname": "www.instagram.com", "favicon": "https://imgs.search.brave.com/7A-upEbZhKg3zcLw2J4VdqF63kB8ow6z3oq0uJL0Xlw/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2RiYmJiZDA4/NTBkNWQ0ZmQ3NDE5/OGUxOGI4NzE5ZDI0/Zjk0M2ExMDkzZmJm/ODA0MmJiMzkwZjMy/ZDM4YWVkOS93d3cu/aW5zdGFncmFtLmNv/bS8", "path": "\u203a emmanuelmacron"}}, {"title": "Emmanuel Macron: news, videos, reports and analysis - France 24", "url": "https://www.france24.com/en/tag/emmanuel-macron/", "is_source_local": false, "is_source_both": false, "description": "Find all the latest articles and watch TV shows, reports and podcasts related to Emmanuel <strong>Macron</strong> on France 24", "profile": {"name": "France 24", "url": "https://www.france24.com/en/tag/emmanuel-macron/", "long_name": "france24.com", "img": "https://imgs.search.brave.com/oIfna_OBoIej8mg_-tdfbCVxnusb3kHuwq2cGgCmigc/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDlkMzg5NjVi/NTY0NDFjZTlhNTA2/YWJlZDQ3YTM1OGY4/OWE3NTI0ZTZiOWU1/NWExZjFhODc2NmQ4/ZjhlMzgxZS93d3cu/ZnJhbmNlMjQuY29t/Lw"}, "language": "en", "family_friendly": true, "type": "search_result", "subtype": "generic", "meta_url": {"scheme": "https", "netloc": "france24.com", "hostname": "www.france24.com", "favicon": "https://imgs.search.brave.com/oIfna_OBoIej8mg_-tdfbCVxnusb3kHuwq2cGgCmigc/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDlkMzg5NjVi/NTY0NDFjZTlhNTA2/YWJlZDQ3YTM1OGY4/OWE3NTI0ZTZiOWU1/NWExZjFhODc2NmQ4/ZjhlMzgxZS93d3cu/ZnJhbmNlMjQuY29t/Lw", "path": "\u203a en  \u203a tag  \u203a emmanuel-macron"}, "thumbnail": {"src": "https://imgs.search.brave.com/3ChrW20CfGwvmzTiwusikuVhxCTQ88-7gyeJ4B0zrHA/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9zdGF0/aWMuZnJhbmNlMjQu/Y29tL21ldGFfb2df/dHdjYXJkcy9GMjRf/VFcucG5n", "original": "https://static.france24.com/meta_og_twcards/F24_TW.png", "logo": false}}, {"title": "Welcome to the website of the French Presidency", "url": "https://www.elysee.fr/en/", "is_source_local": false, "is_source_both": false, "description": "Find out all the news of the President Emmanuel <strong>Macron</strong> on the official website and discover our pages on the history of the French Republic.", "profile": {"name": "Elysee", "url": "https://www.elysee.fr/en/", "long_name": "elysee.fr", "img": "https://imgs.search.brave.com/xHVzZjTgH7GVOnozdB_Xqbpj_ZJThyLwSY4ua1EZcU8/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzA1OTNmM2M5/ZGQ3NDZkMGI4NWEx/YjM4NmI0YTdjMWEz/ZDkyYTA5ZDE1YTFm/NzZjMWE0MzhjZDY1/Y2Q5ZjkwZi93d3cu/ZWx5c2VlLmZyLw"}, "language": "en", "family_friendly": true, "type": "search_result", "subtype": "generic", "meta_url": {"scheme": "https", "netloc": "elysee.fr", "hostname": "www.elysee.fr", "favicon": "https://imgs.search.brave.com/xHVzZjTgH7GVOnozdB_Xqbpj_ZJThyLwSY4ua1EZcU8/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzA1OTNmM2M5/ZGQ3NDZkMGI4NWEx/YjM4NmI0YTdjMWEz/ZDkyYTA5ZDE1YTFm/NzZjMWE0MzhjZDY1/Y2Q5ZjkwZi93d3cu/ZWx5c2VlLmZyLw", "path": "\u203a en"}, "thumbnail": {"src": "https://imgs.search.brave.com/mmL470Ivm3qgOxv3Xh3Zv1GVgTxP9Te3tnKkyC4g3QU/rs:fit:200:200:1/g:ce/aHR0cHM6Ly93d3cu/ZWx5c2VlLmZyL2Zy/b250L2ltYWdlcy92/aWduZXR0ZS1ycy1k/ZWZhdXQtMi43ZDU4/MmQxZS5qcGc", "original": "https://www.elysee.fr/front/images/vignette-rs-defaut-2.7d582d1e.jpg", "logo": false}}, {"title": "Emmanuel Macron shows off his boxing skills, sparking mixed reaction ...", "url": "https://www.cnn.com/2024/03/21/world/emmanuel-macron-boxing-photos-scli-intl/index.html", "is_source_local": false, "is_source_both": false, "description": "Photos of French President Emmanuel <strong>Macron</strong> hitting a boxing bag have caused amusement, bemusement and consternation in the country.", "page_age": "2024-03-21T15:15:13", "profile": {"name": "CNN", "url": "https://www.cnn.com/2024/03/21/world/emmanuel-macron-boxing-photos-scli-intl/index.html", "long_name": "Cable News Network", "img": "https://imgs.search.brave.com/DAZA4ewRkBeQvRJZDdAr2hK4QARKCzxuHhJeDZq9wJc/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWE3MWZjOTZk/NGRhM2RmZDQzMjZh/NjE3OGQ3NzQ3MDI5/NDJiOGI2ZDdkZDFj/ODI3N2MzYWU3OGU4/YzQ3YTNkNC93d3cu/Y25uLmNvbS8"}, "language": "en", "family_friendly": true, "type": "search_result", "subtype": "article", "meta_url": {"scheme": "https", "netloc": "cnn.com", "hostname": "www.cnn.com", "favicon": "https://imgs.search.brave.com/DAZA4ewRkBeQvRJZDdAr2hK4QARKCzxuHhJeDZq9wJc/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWE3MWZjOTZk/NGRhM2RmZDQzMjZh/NjE3OGQ3NzQ3MDI5/NDJiOGI2ZDdkZDFj/ODI3N2MzYWU3OGU4/YzQ3YTNkNC93d3cu/Y25uLmNvbS8", "path": "\u203a 2024  \u203a 03  \u203a 21  \u203a world  \u203a emmanuel-macron-boxing-photos-scli-intl  \u203a index.html"}, "thumbnail": {"src": "https://imgs.search.brave.com/cFASP6O2OBWntFnTQUIap4BSRenBIO3UgfwxDfwVjOk/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9tZWRp/YS5jbm4uY29tL2Fw/aS92MS9pbWFnZXMv/c3RlbGxhci9wcm9k/L3NjcmVlbnNob3Qt/MjAyNC0wMy0yMS1h/dC0xMS0wOS0xNy5q/cGc_Yz0xNng5JnE9/d184MDAsY19maWxs", "original": "https://media.cnn.com/api/v1/images/stellar/prod/screenshot-2024-03-21-at-11-09-17.jpg?c=16x9&q=w_800,c_fill", "logo": false}, "age": "4 days ago"}, {"title": "Emmanuel Macron | AP News", "url": "https://apnews.com/hub/emmanuel-macron", "is_source_local": false, "is_source_both": false, "description": "President Emmanuel <strong>Macron</strong> has insisted that his position on China and Taiwan has not changed. During a state visit to the Netherlands, <strong>Macron</strong> commented on an interview he gave after his trip to Beijing last week that had raised questions about his views.", "profile": {"name": "AP News", "url": "https://apnews.com/hub/emmanuel-macron", "long_name": "apnews.com", "img": "https://imgs.search.brave.com/blR8QE_ooJQOmlneAArOsLLYiCek_LEPf_P7rywJnWg/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWJlOGE2ODEz/ZDcxYzRjZDBjMzMw/OTZiMWM3ZDUwNjJk/ZTMyZDY3N2U5NTg4/ZDZhNDk3NzFiZjdh/OGQ0YTFmNi9hcG5l/d3MuY29tLw"}, "language": "en", "family_friendly": true, "type": "search_result", "subtype": "generic", "meta_url": {"scheme": "https", "netloc": "apnews.com", "hostname": "apnews.com", "favicon": "https://imgs.search.brave.com/blR8QE_ooJQOmlneAArOsLLYiCek_LEPf_P7rywJnWg/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWJlOGE2ODEz/ZDcxYzRjZDBjMzMw/OTZiMWM3ZDUwNjJk/ZTMyZDY3N2U5NTg4/ZDZhNDk3NzFiZjdh/OGQ0YTFmNi9hcG5l/d3MuY29tLw", "path": "\u203a hub  \u203a emmanuel-macron"}, "thumbnail": {"src": "https://imgs.search.brave.com/mILH7dS2jxjOXf2qvRUMfIMlqvfB2BeUsJEU3ogjOJE/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9kaW1z/LmFwbmV3cy5jb20v/ZGltczQvZGVmYXVs/dC9kY2FjMWE0LzIx/NDc0ODM2NDcvc3Ry/aXAvdHJ1ZS9jcm9w/LzcwMHgzOTQrMCsy/OC9yZXNpemUvMTQ0/MHg4MTAhL3F1YWxp/dHkvOTAvP3VybD1o/dHRwcyUzQSUyRiUy/RmFzc2V0cy5hcG5l/d3MuY29tJTJGOTAl/MkYyOSUyRjRlM2Mx/Y2M3NDQ2MDg5YTkx/MDFhN2JkZmY0Yzgl/MkZkZWZhdWx0c2hh/cmVpbWFnZS1jb3B5/LnBuZw", "original": "https://dims.apnews.com/dims4/default/dcac1a4/2147483647/strip/true/crop/700x394+0+28/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F90%2F29%2F4e3c1cc7446089a9101a7bdff4c8%2Fdefaultshareimage-copy.png", "logo": false}}], "family_friendly": true}}
+{
+    "query": {
+        "original": "QUi est macron <@1221758264765583392>",
+        "show_strict_warning": false,
+        "is_navigational": false,
+        "local_decision": "drop",
+        "local_locations_idx": 0,
+        "is_news_breaking": false,
+        "spellcheck_off": false,
+        "country": "us",
+        "bad_results": false,
+        "should_fallback": false,
+        "postal_code": "",
+        "city": "",
+        "header_country": "",
+        "more_results_available": true,
+        "state": ""
+    },
+    "mixed": {
+        "type": "mixed",
+        "main": [
+            {
+                "type": "web",
+                "index": 0,
+                "all": false
+            },
+            {
+                "type": "web",
+                "index": 1,
+                "all": false
+            },
+            {
+                "type": "web",
+                "index": 2,
+                "all": false
+            },
+            {
+                "type": "web",
+                "index": 3,
+                "all": false
+            },
+            {
+                "type": "web",
+                "index": 4,
+                "all": false
+            },
+            {
+                "type": "web",
+                "index": 5,
+                "all": false
+            },
+            {
+                "type": "web",
+                "index": 6,
+                "all": false
+            },
+            {
+                "type": "web",
+                "index": 7,
+                "all": false
+            },
+            {
+                "type": "web",
+                "index": 8,
+                "all": false
+            },
+            {
+                "type": "web",
+                "index": 9,
+                "all": false
+            }
+        ],
+        "top": [],
+        "side": []
+    },
+    "type": "search",
+    "web": {
+        "type": "search",
+        "results": [
+            {
+                "title": "Emmanuel Macron - Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emmanuel_Macron",
+                "is_source_local": false,
+                "is_source_both": false,
+                "description": "A liberal, progressive political movement that gathered huge media coverage when it was first established, the party and <strong>Macron</strong> were both reprimanded by President Hollande and the question of <strong>Macron</strong>&#x27;s loyalty to the government was raised. Several MEPs spoke out in support for the movement though ...",
+                "page_age": "2014-08-27T08:15:41",
+                "profile": {
+                    "name": "Wikipedia",
+                    "url": "https://en.wikipedia.org/wiki/Emmanuel_Macron",
+                    "long_name": "en.wikipedia.org",
+                    "img": "https://imgs.search.brave.com/0kxnVOiqv-faZvOJc7zpym4Zin1CTs1f1svfNZSzmfU/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw"
+                },
+                "language": "en",
+                "family_friendly": true,
+                "type": "search_result",
+                "subtype": "generic",
+                "meta_url": {
+                    "scheme": "https",
+                    "netloc": "en.wikipedia.org",
+                    "hostname": "en.wikipedia.org",
+                    "favicon": "https://imgs.search.brave.com/0kxnVOiqv-faZvOJc7zpym4Zin1CTs1f1svfNZSzmfU/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw",
+                    "path": "\u203a wiki  \u203a Emmanuel_Macron"
+                },
+                "age": "August 27, 2014"
+            },
+            {
+                "title": "Emmanuel Macron : Actualit\u00e9s et infos du pr\u00e9sident de la ...",
+                "url": "https://www.20minutes.fr/politique/emmanuel-macron/",
+                "is_source_local": false,
+                "is_source_both": false,
+                "description": "Consultez toute l&#x27;actualit\u00e9 sur le sujet Emmanuel <strong>Macron</strong> en direct sur 20 Minutes. Retrouvez l&#x27;ensemble de nos derniers articles, directs, photos et vid\u00e9os au sein de notre rubrique.",
+                "profile": {
+                    "name": "www.20minutes.fr",
+                    "url": "https://www.20minutes.fr/politique/emmanuel-macron/",
+                    "long_name": "20minutes.fr",
+                    "img": "https://imgs.search.brave.com/eRM0SRbwDveM-BZWal0-h5y435VoNEa_JEUa8KzHOS8/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNmNkOGJhM2Q1/MmI2NGQwMjk5ZTc2/MGY2NGQ3YTYzMjhh/NmYwY2U0MGMzOTZj/NjRlN2VmNDBjYWMw/MTg4MTUwMC93d3cu/MjBtaW51dGVzLmZy/Lw"
+                },
+                "language": "fr",
+                "family_friendly": true,
+                "type": "search_result",
+                "subtype": "generic",
+                "meta_url": {
+                    "scheme": "https",
+                    "netloc": "20minutes.fr",
+                    "hostname": "www.20minutes.fr",
+                    "favicon": "https://imgs.search.brave.com/eRM0SRbwDveM-BZWal0-h5y435VoNEa_JEUa8KzHOS8/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNmNkOGJhM2Q1/MmI2NGQwMjk5ZTc2/MGY2NGQ3YTYzMjhh/NmYwY2U0MGMzOTZj/NjRlN2VmNDBjYWMw/MTg4MTUwMC93d3cu/MjBtaW51dGVzLmZy/Lw",
+                    "path": "  \u203a politique  \u203a emmanuel macron"
+                },
+                "thumbnail": {
+                    "src": "https://imgs.search.brave.com/WmvmNE1lxzx0l1vAXkqJ6Xbf_WF-K098xADt4z_6ywE/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9pbWcu/MjBtbi5mci9valZa/eDdKaVJKMmdodnhs/dlFGclB5ay8xNDQ0/eDkyMF90b3BzaG90/LWlzcmFlbGktdHJv/b3BzLWdhdGhlci1u/ZWFyLXRoZS1lcmV6/LWNyb3NzaW5nLWR1/cmluZy1hLXJhbGx5/LWJ5LXJpZ2h0LXdp/bmctYWN0aXZpc3Rz/LWNhbGxpbmctZm9y/LXRoZS1idWlsZGlu/Zy1vZi1pc3JhZWxp/LXNldHRsZW1lbnRz/LWluLWdhemEtb24t/ZmVicnVhcnktMjkt/MjAyNC1hbWlkLW9u/Z29pbmctYmF0dGxl/cy1iZXR3ZWVuLWlz/cmFlbC1hbmQtdGhl/LXBhbGVzdGluaWFu/LW1pbGl0YW50LWdy/b3VwLWhhbWFzLXBo/b3RvLWJ5LW9yZW4t/eml2LWFmcA",
+                    "original": "https://img.20mn.fr/ojVZx7JiRJ2ghvxlvQFrPyk/1444x920_topshot-israeli-troops-gather-near-the-erez-crossing-during-a-rally-by-right-wing-activists-calling-for-the-building-of-israeli-settlements-in-gaza-on-february-29-2024-amid-ongoing-battles-between-israel-and-the-palestinian-militant-group-hamas-photo-by-oren-ziv-afp",
+                    "logo": false
+                }
+            },
+            {
+                "title": "Emmanuel Macron | \u00c9lys\u00e9e",
+                "url": "https://www.elysee.fr/en/emmanuel-macron",
+                "is_source_local": false,
+                "is_source_both": false,
+                "description": "Find the official biography of Emmanuel <strong>Macron</strong>, President of the Republic since 2017, re-elected to this function on April 24, 2022.",
+                "profile": {
+                    "name": "Elysee",
+                    "url": "https://www.elysee.fr/en/emmanuel-macron",
+                    "long_name": "elysee.fr",
+                    "img": "https://imgs.search.brave.com/xHVzZjTgH7GVOnozdB_Xqbpj_ZJThyLwSY4ua1EZcU8/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzA1OTNmM2M5/ZGQ3NDZkMGI4NWEx/YjM4NmI0YTdjMWEz/ZDkyYTA5ZDE1YTFm/NzZjMWE0MzhjZDY1/Y2Q5ZjkwZi93d3cu/ZWx5c2VlLmZyLw"
+                },
+                "language": "en",
+                "family_friendly": true,
+                "type": "search_result",
+                "subtype": "generic",
+                "meta_url": {
+                    "scheme": "https",
+                    "netloc": "elysee.fr",
+                    "hostname": "www.elysee.fr",
+                    "favicon": "https://imgs.search.brave.com/xHVzZjTgH7GVOnozdB_Xqbpj_ZJThyLwSY4ua1EZcU8/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzA1OTNmM2M5/ZGQ3NDZkMGI4NWEx/YjM4NmI0YTdjMWEz/ZDkyYTA5ZDE1YTFm/NzZjMWE0MzhjZDY1/Y2Q5ZjkwZi93d3cu/ZWx5c2VlLmZyLw",
+                    "path": "\u203a en  \u203a emmanuel-macron"
+                },
+                "thumbnail": {
+                    "src": "https://imgs.search.brave.com/pWzEExiOCYyeaZHyvraCi7I5w_MmfzNBmv5bKXwV7O0/rs:fit:200:200:1/g:ce/aHR0cHM6Ly93d3cu/ZWx5c2VlLmZyL2Nk/bi1jZ2kvaW1hZ2Uv/d2lkdGg9ODAwJTJD/aGVpZ2h0PTQyMCUy/Q3RyaW09Mjg3JTNC/MCUzQjk1MCUzQjAl/MkNmaXQ9Y292ZXIv/aW1hZ2VzL2RlZmF1/bHQvMDAwMS8xMC9j/OTRjYTVjYmM5OTRh/M2EwZDQ5OTQzNTRj/OWE0YWMzNDA3ZDZh/ZDg0LmpwZWc",
+                    "original": "https://www.elysee.fr/cdn-cgi/image/width=800%2Cheight=420%2Ctrim=287%3B0%3B950%3B0%2Cfit=cover/images/default/0001/10/c94ca5cbc994a3a0d4994354c9a4ac3407d6ad84.jpeg",
+                    "logo": false
+                }
+            },
+            {
+                "title": "Emmanuel Macron (@EmmanuelMacron) \u00b7 X",
+                "url": "https://twitter.com/EmmanuelMacron",
+                "is_source_local": false,
+                "is_source_both": false,
+                "description": "The latest tweets from Emmanuel <strong>Macron</strong> (@EmmanuelMacron)",
+                "profile": {
+                    "name": "X",
+                    "url": "https://twitter.com/EmmanuelMacron",
+                    "long_name": "twitter.com",
+                    "img": "https://imgs.search.brave.com/Zq483bGX0GnSgym-1P7iyOyEDX3PkDZSNT8m56F862A/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2MxOTUxNzhj/OTY1ZTQ3N2I0MjJk/MTY5NGM0MTRlYWVi/MjU1YWE2NDUwYmQ2/YTA2MDFhMDlkZDEx/NTAzZGNiNi90d2l0/dGVyLmNvbS8"
+                },
+                "language": "en",
+                "family_friendly": true,
+                "type": "search_result",
+                "subtype": "generic",
+                "meta_url": {
+                    "scheme": "https",
+                    "netloc": "twitter.com",
+                    "hostname": "twitter.com",
+                    "favicon": "https://imgs.search.brave.com/Zq483bGX0GnSgym-1P7iyOyEDX3PkDZSNT8m56F862A/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2MxOTUxNzhj/OTY1ZTQ3N2I0MjJk/MTY5NGM0MTRlYWVi/MjU1YWE2NDUwYmQ2/YTA2MDFhMDlkZDEx/NTAzZGNiNi90d2l0/dGVyLmNvbS8",
+                    "path": "\u203a EmmanuelMacron"
+                }
+            },
+            {
+                "title": "Emmanuel Macron | Biography, Political Party, Age, Presidency, ...",
+                "url": "https://www.britannica.com/biography/Emmanuel-Macron",
+                "is_source_local": false,
+                "is_source_both": false,
+                "description": "Emmanuel <strong>Macron</strong>, French banker and politician who was elected president of France in 2017. <strong>Macron</strong> was the first person in the history of the Fifth Republic to win the presidency without the backing of either the Socialists or the Gaullists, and he was France\u2019s youngest head of state since ...",
+                "page_age": "2017-05-12T00:00:00",
+                "profile": {
+                    "name": "Britannica",
+                    "url": "https://www.britannica.com/biography/Emmanuel-Macron",
+                    "long_name": "britannica.com",
+                    "img": "https://imgs.search.brave.com/hcLf2uAEj_yDbSzYRgdkKMQIWeIcfmsuchdJkpCh2_g/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzJmYzgxOWRk/Y2FhNWI2MzQzMjQ4/MWVhZDZhNGY3ZjY0/MDgxZTM3YWU5MzYz/NGU2MzM3Y2Y2YTYz/M2IyM2Y0NC93d3cu/YnJpdGFubmljYS5j/b20v"
+                },
+                "language": "en",
+                "family_friendly": true,
+                "type": "search_result",
+                "subtype": "article",
+                "meta_url": {
+                    "scheme": "https",
+                    "netloc": "britannica.com",
+                    "hostname": "www.britannica.com",
+                    "favicon": "https://imgs.search.brave.com/hcLf2uAEj_yDbSzYRgdkKMQIWeIcfmsuchdJkpCh2_g/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzJmYzgxOWRk/Y2FhNWI2MzQzMjQ4/MWVhZDZhNGY3ZjY0/MDgxZTM3YWU5MzYz/NGU2MzM3Y2Y2YTYz/M2IyM2Y0NC93d3cu/YnJpdGFubmljYS5j/b20v",
+                    "path": "  \u203a politics, law & government  \u203a world leaders  \u203a presidents & heads of states"
+                },
+                "thumbnail": {
+                    "src": "https://imgs.search.brave.com/uYd3tSO6ClS8mp0rp5rQdzxUtPPMiRFT8-Zh7Uj2fsM/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9jZG4u/YnJpdGFubmljYS5j/b20vNzQvMTk1Mzc0/LTA1MC1BN0IxM0RD/QS9FbW1hbnVlbC1N/YWNyb24tMjAxNy5q/cGc",
+                    "original": "https://cdn.britannica.com/74/195374-050-A7B13DCA/Emmanuel-Macron-2017.jpg",
+                    "logo": false
+                },
+                "age": "May 12, 2017"
+            },
+            {
+                "title": "Emmanuel Macron (@emmanuelmacron)",
+                "url": "https://www.instagram.com/emmanuelmacron/",
+                "is_source_local": false,
+                "is_source_both": false,
+                "description": "See Instagram photos and videos from Emmanuel <strong>Macron</strong> (@emmanuelmacron)",
+                "profile": {
+                    "name": "Instagram",
+                    "url": "https://www.instagram.com/emmanuelmacron/",
+                    "long_name": "instagram.com",
+                    "img": "https://imgs.search.brave.com/7A-upEbZhKg3zcLw2J4VdqF63kB8ow6z3oq0uJL0Xlw/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2RiYmJiZDA4/NTBkNWQ0ZmQ3NDE5/OGUxOGI4NzE5ZDI0/Zjk0M2ExMDkzZmJm/ODA0MmJiMzkwZjMy/ZDM4YWVkOS93d3cu/aW5zdGFncmFtLmNv/bS8"
+                },
+                "language": "en",
+                "family_friendly": true,
+                "type": "search_result",
+                "subtype": "generic",
+                "meta_url": {
+                    "scheme": "https",
+                    "netloc": "instagram.com",
+                    "hostname": "www.instagram.com",
+                    "favicon": "https://imgs.search.brave.com/7A-upEbZhKg3zcLw2J4VdqF63kB8ow6z3oq0uJL0Xlw/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2RiYmJiZDA4/NTBkNWQ0ZmQ3NDE5/OGUxOGI4NzE5ZDI0/Zjk0M2ExMDkzZmJm/ODA0MmJiMzkwZjMy/ZDM4YWVkOS93d3cu/aW5zdGFncmFtLmNv/bS8",
+                    "path": "\u203a emmanuelmacron"
+                }
+            },
+            {
+                "title": "Emmanuel Macron: news, videos, reports and analysis - France 24",
+                "url": "https://www.france24.com/en/tag/emmanuel-macron/",
+                "is_source_local": false,
+                "is_source_both": false,
+                "description": "Find all the latest articles and watch TV shows, reports and podcasts related to Emmanuel <strong>Macron</strong> on France 24",
+                "profile": {
+                    "name": "France 24",
+                    "url": "https://www.france24.com/en/tag/emmanuel-macron/",
+                    "long_name": "france24.com",
+                    "img": "https://imgs.search.brave.com/oIfna_OBoIej8mg_-tdfbCVxnusb3kHuwq2cGgCmigc/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDlkMzg5NjVi/NTY0NDFjZTlhNTA2/YWJlZDQ3YTM1OGY4/OWE3NTI0ZTZiOWU1/NWExZjFhODc2NmQ4/ZjhlMzgxZS93d3cu/ZnJhbmNlMjQuY29t/Lw"
+                },
+                "language": "en",
+                "family_friendly": true,
+                "type": "search_result",
+                "subtype": "generic",
+                "meta_url": {
+                    "scheme": "https",
+                    "netloc": "france24.com",
+                    "hostname": "www.france24.com",
+                    "favicon": "https://imgs.search.brave.com/oIfna_OBoIej8mg_-tdfbCVxnusb3kHuwq2cGgCmigc/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDlkMzg5NjVi/NTY0NDFjZTlhNTA2/YWJlZDQ3YTM1OGY4/OWE3NTI0ZTZiOWU1/NWExZjFhODc2NmQ4/ZjhlMzgxZS93d3cu/ZnJhbmNlMjQuY29t/Lw",
+                    "path": "\u203a en  \u203a tag  \u203a emmanuel-macron"
+                },
+                "thumbnail": {
+                    "src": "https://imgs.search.brave.com/3ChrW20CfGwvmzTiwusikuVhxCTQ88-7gyeJ4B0zrHA/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9zdGF0/aWMuZnJhbmNlMjQu/Y29tL21ldGFfb2df/dHdjYXJkcy9GMjRf/VFcucG5n",
+                    "original": "https://static.france24.com/meta_og_twcards/F24_TW.png",
+                    "logo": false
+                }
+            },
+            {
+                "title": "Welcome to the website of the French Presidency",
+                "url": "https://www.elysee.fr/en/",
+                "is_source_local": false,
+                "is_source_both": false,
+                "description": "Find out all the news of the President Emmanuel <strong>Macron</strong> on the official website and discover our pages on the history of the French Republic.",
+                "profile": {
+                    "name": "Elysee",
+                    "url": "https://www.elysee.fr/en/",
+                    "long_name": "elysee.fr",
+                    "img": "https://imgs.search.brave.com/xHVzZjTgH7GVOnozdB_Xqbpj_ZJThyLwSY4ua1EZcU8/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzA1OTNmM2M5/ZGQ3NDZkMGI4NWEx/YjM4NmI0YTdjMWEz/ZDkyYTA5ZDE1YTFm/NzZjMWE0MzhjZDY1/Y2Q5ZjkwZi93d3cu/ZWx5c2VlLmZyLw"
+                },
+                "language": "en",
+                "family_friendly": true,
+                "type": "search_result",
+                "subtype": "generic",
+                "meta_url": {
+                    "scheme": "https",
+                    "netloc": "elysee.fr",
+                    "hostname": "www.elysee.fr",
+                    "favicon": "https://imgs.search.brave.com/xHVzZjTgH7GVOnozdB_Xqbpj_ZJThyLwSY4ua1EZcU8/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzA1OTNmM2M5/ZGQ3NDZkMGI4NWEx/YjM4NmI0YTdjMWEz/ZDkyYTA5ZDE1YTFm/NzZjMWE0MzhjZDY1/Y2Q5ZjkwZi93d3cu/ZWx5c2VlLmZyLw",
+                    "path": "\u203a en"
+                },
+                "thumbnail": {
+                    "src": "https://imgs.search.brave.com/mmL470Ivm3qgOxv3Xh3Zv1GVgTxP9Te3tnKkyC4g3QU/rs:fit:200:200:1/g:ce/aHR0cHM6Ly93d3cu/ZWx5c2VlLmZyL2Zy/b250L2ltYWdlcy92/aWduZXR0ZS1ycy1k/ZWZhdXQtMi43ZDU4/MmQxZS5qcGc",
+                    "original": "https://www.elysee.fr/front/images/vignette-rs-defaut-2.7d582d1e.jpg",
+                    "logo": false
+                }
+            },
+            {
+                "title": "Emmanuel Macron shows off his boxing skills, sparking mixed reaction ...",
+                "url": "https://www.cnn.com/2024/03/21/world/emmanuel-macron-boxing-photos-scli-intl/index.html",
+                "is_source_local": false,
+                "is_source_both": false,
+                "description": "Photos of French President Emmanuel <strong>Macron</strong> hitting a boxing bag have caused amusement, bemusement and consternation in the country.",
+                "page_age": "2024-03-21T15:15:13",
+                "profile": {
+                    "name": "CNN",
+                    "url": "https://www.cnn.com/2024/03/21/world/emmanuel-macron-boxing-photos-scli-intl/index.html",
+                    "long_name": "Cable News Network",
+                    "img": "https://imgs.search.brave.com/DAZA4ewRkBeQvRJZDdAr2hK4QARKCzxuHhJeDZq9wJc/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWE3MWZjOTZk/NGRhM2RmZDQzMjZh/NjE3OGQ3NzQ3MDI5/NDJiOGI2ZDdkZDFj/ODI3N2MzYWU3OGU4/YzQ3YTNkNC93d3cu/Y25uLmNvbS8"
+                },
+                "language": "en",
+                "family_friendly": true,
+                "type": "search_result",
+                "subtype": "article",
+                "meta_url": {
+                    "scheme": "https",
+                    "netloc": "cnn.com",
+                    "hostname": "www.cnn.com",
+                    "favicon": "https://imgs.search.brave.com/DAZA4ewRkBeQvRJZDdAr2hK4QARKCzxuHhJeDZq9wJc/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWE3MWZjOTZk/NGRhM2RmZDQzMjZh/NjE3OGQ3NzQ3MDI5/NDJiOGI2ZDdkZDFj/ODI3N2MzYWU3OGU4/YzQ3YTNkNC93d3cu/Y25uLmNvbS8",
+                    "path": "\u203a 2024  \u203a 03  \u203a 21  \u203a world  \u203a emmanuel-macron-boxing-photos-scli-intl  \u203a index.html"
+                },
+                "thumbnail": {
+                    "src": "https://imgs.search.brave.com/cFASP6O2OBWntFnTQUIap4BSRenBIO3UgfwxDfwVjOk/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9tZWRp/YS5jbm4uY29tL2Fw/aS92MS9pbWFnZXMv/c3RlbGxhci9wcm9k/L3NjcmVlbnNob3Qt/MjAyNC0wMy0yMS1h/dC0xMS0wOS0xNy5q/cGc_Yz0xNng5JnE9/d184MDAsY19maWxs",
+                    "original": "https://media.cnn.com/api/v1/images/stellar/prod/screenshot-2024-03-21-at-11-09-17.jpg?c=16x9&q=w_800,c_fill",
+                    "logo": false
+                },
+                "age": "4 days ago"
+            },
+            {
+                "title": "Emmanuel Macron | AP News",
+                "url": "https://apnews.com/hub/emmanuel-macron",
+                "is_source_local": false,
+                "is_source_both": false,
+                "description": "President Emmanuel <strong>Macron</strong> has insisted that his position on China and Taiwan has not changed. During a state visit to the Netherlands, <strong>Macron</strong> commented on an interview he gave after his trip to Beijing last week that had raised questions about his views.",
+                "profile": {
+                    "name": "AP News",
+                    "url": "https://apnews.com/hub/emmanuel-macron",
+                    "long_name": "apnews.com",
+                    "img": "https://imgs.search.brave.com/blR8QE_ooJQOmlneAArOsLLYiCek_LEPf_P7rywJnWg/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWJlOGE2ODEz/ZDcxYzRjZDBjMzMw/OTZiMWM3ZDUwNjJk/ZTMyZDY3N2U5NTg4/ZDZhNDk3NzFiZjdh/OGQ0YTFmNi9hcG5l/d3MuY29tLw"
+                },
+                "language": "en",
+                "family_friendly": true,
+                "type": "search_result",
+                "subtype": "generic",
+                "meta_url": {
+                    "scheme": "https",
+                    "netloc": "apnews.com",
+                    "hostname": "apnews.com",
+                    "favicon": "https://imgs.search.brave.com/blR8QE_ooJQOmlneAArOsLLYiCek_LEPf_P7rywJnWg/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWJlOGE2ODEz/ZDcxYzRjZDBjMzMw/OTZiMWM3ZDUwNjJk/ZTMyZDY3N2U5NTg4/ZDZhNDk3NzFiZjdh/OGQ0YTFmNi9hcG5l/d3MuY29tLw",
+                    "path": "\u203a hub  \u203a emmanuel-macron"
+                },
+                "thumbnail": {
+                    "src": "https://imgs.search.brave.com/mILH7dS2jxjOXf2qvRUMfIMlqvfB2BeUsJEU3ogjOJE/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9kaW1z/LmFwbmV3cy5jb20v/ZGltczQvZGVmYXVs/dC9kY2FjMWE0LzIx/NDc0ODM2NDcvc3Ry/aXAvdHJ1ZS9jcm9w/LzcwMHgzOTQrMCsy/OC9yZXNpemUvMTQ0/MHg4MTAhL3F1YWxp/dHkvOTAvP3VybD1o/dHRwcyUzQSUyRiUy/RmFzc2V0cy5hcG5l/d3MuY29tJTJGOTAl/MkYyOSUyRjRlM2Mx/Y2M3NDQ2MDg5YTkx/MDFhN2JkZmY0Yzgl/MkZkZWZhdWx0c2hh/cmVpbWFnZS1jb3B5/LnBuZw",
+                    "original": "https://dims.apnews.com/dims4/default/dcac1a4/2147483647/strip/true/crop/700x394+0+28/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F90%2F29%2F4e3c1cc7446089a9101a7bdff4c8%2Fdefaultshareimage-copy.png",
+                    "logo": false
+                }
+            }
+        ],
+        "family_friendly": true
+    }
+}
