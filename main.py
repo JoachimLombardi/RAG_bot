@@ -2,9 +2,16 @@ import openai
 import discord
 import yaml
 import json
-from langchain_community.document_loaders import BraveSearchLoader
 import requests
 
+with open("cred.yml", "r") as stream:
+    try:
+        cred = yaml.safe_load(stream)
+    except yaml.YAMLError as exc:
+        print(exc)
+
+token = cred["BOT_TOKEN"]
+openai.api_key = cred["OPENAI_API_TOKEN"]
 
 with open(".cred.yml", "r") as stream:
     try:
@@ -49,7 +56,7 @@ Augmenté par des résultats de recherche
 contenus dans le message suivant, synthétise au mieux les resultats 
 pour l'utilisateur."""
 
-current_conv = [{"role":"system", "content": msg_system}]
+current_conv = [{"role": "system", "content": msg_system}]
 
 
 # connect to discord
@@ -59,10 +66,8 @@ client = discord.Client(intents=intents)
 
 def chatgpt_reply(conv):
     completion = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo", 
-        messages=conv,
-        max_tokens = 350
-        )
+        model="gpt-3.5-turbo", messages=conv
+    )
 
     return completion["choices"][0]["message"]["content"]
 
@@ -79,13 +84,26 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.channel.name == "général":
-        msg = message.content
-        msg = str(msg)
-        current_conv.append({"role":"user", "content":msg})
-        reply = chatgpt_reply(current_conv)
-        current_conv.append({"role":"assistant", "content":reply})
+    if (
+        message.channel.name == "général"
+        and client.user.mentioned_in(message)
+        and message.mention_everyone is False
+    ):
+        async with message.channel.typing():
+            msg = message.content
+            msg = str(msg)
+            resultat_api = extract_descriptions_and_urls_to_json(brave_api(msg, brave))
+            current_conv.append({"role": "user", "content": msg})
+            current_conv.append({"role": "system", "content": str(resultat_api)})
+            reply = chatgpt_reply(current_conv)
+            current_conv.append({"role": "assistant", "content": reply})
         await message.reply(reply, mention_author=True)
+        # if the current_conv contains more than 10 messages, pop 2 messages
+        if len(current_conv) > 10:
+            current_conv.pop(0)
+            current_conv.pop(0)
+            current_conv.pop(0)
+
 
 # lancement de l'appli
 client.run(token)
