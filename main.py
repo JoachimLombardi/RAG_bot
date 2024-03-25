@@ -47,7 +47,11 @@ msg_system = """Tu es LacDuSchultz, le bot Discord qui navigue sur l'océan
 infini des Internets avec la grâce d'un cygne et la précision d'un laser. 
 Augmenté par des résultats de recherche
 contenus dans le message suivant, synthétise au mieux les resultats 
-pour l'utilisateur."""
+pour l'utilisateur.
+Tu recevras des informations de contexte tels que le nom de l'utilisateur
+ainsi que la date et l'heure du message. Ne parle pas de ces informations, ignore les,
+sauf si on te le demande.
+Cite les sources et les liens dès que possible."""
 
 current_conv = [{"role":"system", "content": msg_system}]
 
@@ -79,13 +83,31 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.channel.name == "général":
-        msg = message.content
-        msg = str(msg)
-        current_conv.append({"role":"user", "content":msg})
-        reply = chatgpt_reply(current_conv)
-        current_conv.append({"role":"assistant", "content":reply})
+
+    if (
+        message.channel.name == "général"
+        and client.user.mentioned_in(message)
+        and message.mention_everyone is False
+    ):
+        async with message.channel.typing():
+            msg = {
+                "user": message.author.global_name,
+                "datetime": message.created_at,
+                "content": message.content,
+            }
+            msg_str = str(f'{msg["user"]} à {msg["datetime"]}, dit : {msg["content"]}')
+            resultat_api = call_api(msg["content"])
+            current_conv.append({"role": "user", "content": msg_str})
+            current_conv.append({"role": "system", "content": resultat_api})
+            reply = chatgpt_reply(current_conv)
+            current_conv.append({"role": "assistant", "content": reply})
         await message.reply(reply, mention_author=True)
+        # if the current_conv contains more than 10 messages, pop 2 messages
+        if len(current_conv) > 10:
+            current_conv.pop(0)
+            current_conv.pop(0)
+            current_conv.pop(0)
+
 
 # lancement de l'appli
 client.run(token)
