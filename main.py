@@ -3,6 +3,8 @@ import discord
 import yaml
 import json
 import requests
+from components.Brave import brave_api, extract_descriptions_and_urls_to_json
+from components.agents import chatgpt_reply
 
 with open(".cred.yml", "r") as stream:
     try:
@@ -51,7 +53,7 @@ ainsi que la date et l'heure du message. Ne parle pas de ces informations, ignor
 sauf si on te le demande.
 Cite les sources et les liens dès que possible."""
 
-current_conv = [{"role": "system", "content": msg_system}]
+current_conv = [{"role":"system", "content": msg_system}]
 
 
 # connect to discord
@@ -61,8 +63,10 @@ client = discord.Client(intents=intents)
 
 def chatgpt_reply(conv):
     completion = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo", messages=conv
-    )
+        model="gpt-3.5-turbo", 
+        messages=conv,
+        max_tokens = 350
+        )
 
     return completion["choices"][0]["message"]["content"]
 
@@ -86,14 +90,24 @@ async def on_message(message):
     ):
         async with message.channel.typing():
             msg = message.content
-            msg = str(msg)
-            resultat_api = extract_descriptions_and_urls_to_json(brave_api(msg, brave))
-            current_conv.append({"role": "user", "content": msg})
-            current_conv.append({"role": "system", "content": str(resultat_api)})
-            reply = chatgpt_reply(current_conv)
-            current_conv.append({"role": "assistant", "content": reply})
+            oracle_prompt = oracle_conv.copy()
+            oracle_prompt.append({"role": "user", "content": msg})
+            response_oracle = chatgpt_reply(oracle_prompt)
+            print(response_oracle)
+            if response_oracle == "0":
+                resultat_api = extract_descriptions_and_urls_to_json(brave_api(msg, brave))
+                RAG_conv.append({"role": "user", "content": msg})
+                RAG_conv.append({"role": "system", "content": str(resultat_api["results"][:2])})
+                reply = chatgpt_reply(RAG_conv)
+                RAG_conv.append({"role": "assistant", "content": reply})
+
+            else :
+                casual_conv.append({"role": "user", "content": msg})
+                reply = chatgpt_reply(casual_conv)
+                casual_conv.append({"role": "assistant", "content": reply})
+
         await message.reply(reply, mention_author=True)
-        # if the current_conv contains more than 10 messages, pop 3 messages
+        # if the current_conv contains more than 10 messages, pop 2 messages
         if len(current_conv) > 10:
             current_conv.pop(0)
             current_conv.pop(0)
@@ -102,3 +116,7 @@ async def on_message(message):
 
 # lancement de l'appli
 client.run(token)
+
+
+
+
