@@ -56,14 +56,15 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.channel.name == "général":
-        msg = message.content
-        msg = str(msg)
-        resultat_api = call_api(msg)
-        current_conv.append({"role":"user", "content":msg})
-        current_conv.append({"role":"system", "content":resultat_api})
-        reply = chatgpt_reply(current_conv)
-        current_conv.append({"role":"assistant", "content":reply})
+    if message.channel.name == "général" and client.user.mentioned_in(message) and message.mention_everyone is False:
+        async with message.channel.typing():
+            msg = message.content
+            msg = str(msg)
+            resultat_api = call_api(msg)
+            current_conv.append({"role":"user", "content":msg})
+            current_conv.append({"role":"system", "content":resultat_api})
+            reply = chatgpt_reply(current_conv)
+            current_conv.append({"role":"assistant", "content":reply})
         await message.reply(reply, mention_author=True)
         # if the current_conv contains more than 10 messages, pop 2 messages
         if len(current_conv) > 10:
