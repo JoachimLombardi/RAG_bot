@@ -1,10 +1,9 @@
 import openai
 import discord
 import yaml
-import json
-import requests
 from components.Brave import brave_api, extract_descriptions_and_urls_to_json
 from components.agents import chatgpt_reply
+import json
 
 with open(".cred.yml", "r") as stream:
     try:
@@ -17,72 +16,45 @@ openai.api_key = cred["OPENAI_API_TOKEN"]
 brave = cred["BRAVE_TOKEN"]
 
 
-def brave_api(msg, brave):
-    url = "https://api.search.brave.com/res/v1/web/search"
+RAG_msg_system = """Tu es Lancelot, un noble chevalier.
+Tu es là pour répondre du mieux possible aux questions des gens.
+Si tu n'as pas la réponse, tu peux synthétiser les resultats sérialisés qui te seront fournis pour répondre aux questions.
+Cite les sources et les liens dès que possible.
+"""
 
-    querystring = {"q": msg}
+RAG_conv = [{"role": "system", "content": RAG_msg_system}]
 
-    headers = {
-        "Accept": "application/json",
-        "Accept-Encoding": "gzip",
-        "X-Subscription-Token": brave
-    }
-    response = requests.get(url, headers=headers, params=querystring)
-    json.dump(response.json(), open("results.json", "w"))
-    return response.json()
+casual_msg_system = """
+Tu es Lancelot, un noble chevalier.
+Tu es là pour interagir et badiner avec les utilisateurs du discord.
+"""
 
-def extract_descriptions_and_urls_to_json(json_data):
-    results = json_data.get('web', {}).get('results', [])
+casual_conv = [{"role": "system", "content": casual_msg_system}]
 
-    output_data = {'results': []}
-    for result in results:
-        description = result.get('description')
-        url = result.get('url')
-        output_data['results'].append({'description': description, 'url': url})
-    return output_data
+oracle_msg_system = """
+Détermine si la catégorie nécessite de la recherche d'informations.
+## Output:
+{"search_info":bool}
+"""
+oracle_conv = [{"role": "system", "content": oracle_msg_system}]
 
-# current_conv
-
-msg_system = """Tu es LacDuSchultz, le bot Discord qui navigue sur l'océan 
-infini des Internets avec la grâce d'un cygne et la précision d'un laser. 
-Augmenté par des résultats de recherche
-contenus dans le message suivant, synthétise au mieux les resultats 
-pour l'utilisateur.
-Tu recevras des informations de contexte tels que le nom de l'utilisateur
-ainsi que la date et l'heure du message. Ne parle pas de ces informations, ignore les,
-sauf si on te le demande.
-Cite les sources et les liens dès que possible."""
-
-current_conv = [{"role":"system", "content": msg_system}]
-
+history = []
+full_prompt = []
 
 # connect to discord
 intents = discord.Intents.all()
 client = discord.Client(intents=intents)
-
-
-def chatgpt_reply(conv):
-    completion = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo", 
-        messages=conv,
-        max_tokens = 350
-        )
-
-    return completion["choices"][0]["message"]["content"]
-
 
 # log
 @client.event
 async def on_ready():
     print("Logged as {0.user}".format(client))
 
-
 # answerer
 @client.event
 async def on_message(message):
     if message.author == client.user:
         return
-
     if (
         message.channel.name == "général"
         and client.user.mentioned_in(message)
@@ -90,33 +62,33 @@ async def on_message(message):
     ):
         async with message.channel.typing():
             msg = message.content
-            oracle_prompt = oracle_conv.copy()
-            oracle_prompt.append({"role": "user", "content": msg})
-            response_oracle = chatgpt_reply(oracle_prompt)
-            print(response_oracle)
-            if response_oracle == "0":
-                resultat_api = extract_descriptions_and_urls_to_json(brave_api(msg, brave))
-                RAG_conv.append({"role": "user", "content": msg})
-                RAG_conv.append({"role": "system", "content": str(resultat_api["results"][:2])})
-                reply = chatgpt_reply(RAG_conv)
-                RAG_conv.append({"role": "assistant", "content": reply})
-
-            else :
-                casual_conv.append({"role": "user", "content": msg})
-                reply = chatgpt_reply(casual_conv)
-                casual_conv.append({"role": "assistant", "content": reply})
-
+            if message.attachments:
+                model="gpt-4-vision-preview" 
+                reply = chatgpt_reply([{"role": "user", "content": [{"type": "text", "text": msg},{"type": "image_url", "image_url": {"url": message.attachments[0].url}}]}], model)          
+            else:
+                model="gpt-3.5-turbo"
+                oracle_prompt = oracle_conv.copy()
+                oracle_prompt.append({"role": "user", "content": msg})
+                response_oracle = chatgpt_reply(oracle_prompt, model)
+                response_oracle = json.loads(response_oracle)
+                print(response_oracle)
+                full_prompt.extend(history.copy())
+                if response_oracle["search_info"]:
+                    full_prompt.extend(RAG_conv.copy())
+                    resultat_api = extract_descriptions_and_urls_to_json(brave_api(msg, brave))
+                    full_prompt.append({"role": "system", "content": str(resultat_api["results"][:5])})           
+                else :
+                    full_prompt.extend(casual_conv.copy())
+                full_prompt.append({"role": "user", "content": msg})
+                print(history)
+                print(full_prompt)
+                reply = chatgpt_reply(full_prompt, model)
+                full_prompt.clear()
+                history.append({"role": "user", "content": msg})
+                history.append({"role": "assistant", "content": reply})
+                # if the current_conv contains more than 10 messages, pop the first message
+                while len(history) > 10:
+                    history.pop(0)
         await message.reply(reply, mention_author=True)
-        # if the current_conv contains more than 10 messages, pop 2 messages
-        if len(current_conv) > 10:
-            current_conv.pop(0)
-            current_conv.pop(0)
-            current_conv.pop(0)
-
-
 # lancement de l'appli
 client.run(token)
-
-
-
-

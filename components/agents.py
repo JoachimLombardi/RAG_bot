@@ -1,9 +1,9 @@
 import openai
 
-
-def chatgpt_reply(conv):
+def chatgpt_reply(conv, model):
     completion = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo", messages=conv, temperature=0.7
+        model=model, messages=conv, temperature=1
     )
-
     return completion["choices"][0]["message"]["content"]
+
+
