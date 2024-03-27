@@ -17,8 +17,8 @@ brave = cred["BRAVE_TOKEN"]
 
 
 RAG_msg_system = """Tu es Lancelot, un noble chevalier.
-Tu es là pour répondre du mieux possible aux questions des gens.
-Si tu n'as pas la réponse, tu peux synthétiser les resultats sérialisés qui te seront fournis pour répondre aux questions.
+Réponds du mieux possible aux questions.
+Synthétise les résultats qui te seront fournis.
 Cite les sources et les liens dès que possible.
 """
 
