@@ -1,24 +1,27 @@
 import openai
 import discord
-import yaml
 from components.Brave import brave_api, extract_descriptions_and_urls_to_json
 from components.agents import chatgpt_reply
 import json
+import os
 
-with open(".cred.yml", "r") as stream:
-    try:
-        cred = yaml.safe_load(stream)
-    except yaml.YAMLError as exc:
-        print(exc)
+token = os.environ.get("BOT_TOKEN")
+openai.api_key = os.environ.get("OPENAI_API_TOKEN")
+brave = os.environ.get("BRAVE_TOKEN")
 
-token = cred["BOT_TOKEN"]
-openai.api_key = cred["OPENAI_API_TOKEN"]
-brave = cred["BRAVE_TOKEN"]
+contrieval_msg_system = """write in French a document that answers the question i.e. an hypothetical document.
+ the generated document is not real, can contain factual errors but is like a relevant document.
+ You must output a valid JSON format.
+ ## Expected_Output:
+ {"false_doc":str}
+ """
 
+contrieval_conv = [{"role": "system", "content": contrieval_msg_system}]
 
-RAG_msg_system = """Tu es Lancelot, un noble chevalier.
+RAG_msg_system = """Tu es un expert sur les dernières actualités.
 Réponds du mieux possible aux questions.
 Fais une réponse complète.
+Affiche l'age des articles.
 Synthétise les résultats qui te seront fournis.
 Cite les sources et les liens dès que possible.
 """
@@ -26,15 +29,15 @@ Cite les sources et les liens dès que possible.
 RAG_conv = [{"role": "system", "content": RAG_msg_system}]
 
 casual_msg_system = """
-Tu es Lancelot, un noble chevalier.
 Tu es là pour interagir et badiner avec les utilisateurs du discord.
 """
 
 casual_conv = [{"role": "system", "content": casual_msg_system}]
 
 oracle_msg_system = """
-Détermine si la catégorie nécessite de la recherche d'informations.
-## Output:
+Detect if the query needs a research of informations.
+You must output a valid JSON format.
+## Expected Output:
 {"search_info":bool}
 """
 oracle_conv = [{"role": "system", "content": oracle_msg_system}]
@@ -51,9 +54,12 @@ client = discord.Client(intents=intents)
 async def on_ready():
     print("Logged as {0.user}".format(client))
 
+extract_descriptions_and_urls_to_json(brave_api("Perspective économique en côte d'ivoire ?", brave))
+
 # answerer
 @client.event
 async def on_message(message):
+    full_prompt = []
     if message.author == client.user:
         return
     if (
@@ -67,7 +73,7 @@ async def on_message(message):
                 model="gpt-4-vision-preview" 
                 reply = chatgpt_reply([{"role": "user", "content": [{"type": "text", "text": msg},{"type": "image_url", "image_url": {"url": message.attachments[0].url}}]}], model)          
             else:
-                model="gpt-3.5-turbo"
+                model = "gpt-3.5-turbo"
                 oracle_prompt = oracle_conv.copy()
                 oracle_prompt.append({"role": "user", "content": msg})
                 response_oracle = chatgpt_reply(oracle_prompt, model)
@@ -75,10 +81,16 @@ async def on_message(message):
                 print(response_oracle)
                 full_prompt.extend(history.copy())
                 if response_oracle["search_info"]:
+                    contrieval_conv.append({"role": "user", "content": msg})
+                    reply = chatgpt_reply(contrieval_conv, model)
+                    response_contrieval = json.loads(reply)
+                    print(response_contrieval["false_doc"])
+                    msg += '\n' + response_contrieval["false_doc"]
+                    print(msg)
                     full_prompt.extend(RAG_conv.copy())
                     resultat_api = extract_descriptions_and_urls_to_json(brave_api(msg, brave))
                     full_prompt.append({"role": "system", "content": str(resultat_api["results"][:5])})           
-                else :
+                else:
                     full_prompt.extend(casual_conv.copy())
                 full_prompt.append({"role": "user", "content": msg})
                 print(history)
@@ -90,6 +102,7 @@ async def on_message(message):
                 # if the current_conv contains more than 10 messages, pop the first message
                 while len(history) > 10:
                     history.pop(0)
+                
         await message.reply(reply, mention_author=True)
 # lancement de l'appli
 client.run(token)
