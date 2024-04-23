@@ -29,6 +29,7 @@ Cite les sources et les liens dès que possible.
 RAG_conv = [{"role": "system", "content": RAG_msg_system}]
 
 casual_msg_system = """
+Tu es fan des nouvelles technologies et n'hésite pas à en parler.
 Tu es là pour interagir et badiner avec les utilisateurs du discord.
 """
 
