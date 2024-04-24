@@ -26,9 +26,9 @@ jobs:
       - name: Deploy to Azure Container Instance
         uses: azure/aci-deploy@v1
         with:
-          resourceGroupName: 'devia_25'
-          containerGroupName: 'mycontainer'
+          resource-group: 'devia_25'
+          name: 'mycontainer'
           image: 'jobot1.azurecr.io/bot-test:latest'
-          registryLoginServer: 'jobot1.azurecr.io'
-          registryUsername: ${{ secrets.REGISTRY_USERNAME }}
-          registryPassword: ${{ secrets.REGISTRY_PASSWORD }}
+          registry-login-server: 'jobot1.azurecr.io'
+          registry-username: ${{ secrets.REGISTRY_USERNAME }}
+          registry-password: ${{ secrets.REGISTRY_PASSWORD }}
