@@ -26,7 +26,7 @@ jobs:
         uses: azure/aci-deploy@v1
         with:
           resource-group: 'devia_25'
-          dns-name-label: 'devia_25'${{ github.run_number }}
+          dns-name-label: ${{ secrets.RESOURCE_GROUP }}${{ github.run_number }}
           name: 'jobot1'
           image: 'jobot1.azurecr.io/bot-test:latest'
           registry-login-server: 'jobot1.azurecr.io'
