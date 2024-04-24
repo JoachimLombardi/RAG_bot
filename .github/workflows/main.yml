@@ -20,10 +20,8 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t bot-test .
-          docker login azure
-          docker tag bot-test jobot1.azurecr.io/bot-test:latest
-          docker push jobot1.azurecr.io/bot-test:latest
+         az acr build -r jobot1 --image bot-test:latest .
+
 
       - name: Deploy to Azure Container Instance
         uses: azure/aci-deploy@v1
