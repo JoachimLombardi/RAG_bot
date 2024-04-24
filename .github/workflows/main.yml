@@ -1,49 +1,36 @@
-name: Deploy to ACI
+ name: Docker Build and Deploy to Azure Container Instance
 
-on:
-  push:
-    branches:
-      - main
+   on:
+     push:
+       branches:
+         - main
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
+   jobs:
+     build:
+       runs-on: ubuntu-latest
 
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+       steps:
+         - name: Checkout code
+           uses: actions/checkout@v2
 
-    - name: Login to Azure
-      uses: azure/login@v2
-      with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+         - name: Login to Azure
+           uses: azure/login@v1
+           with:
+             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-    - name: Build and push Docker image
-      run: |
-        az acr build --registry jobot1 --image jobot1:latest .
+         - name: Build Docker image
+           run: |
+             docker build -t mydockerimage .
+             docker login azure
+             docker tag mydockerimage <azure-registry>.azurecr.io/mydockerimage:latest
+             docker push <azure-registry>.azurecr.io/mydockerimage:latest
 
-    - name: Get Container ID
-      id: get_container_id
-      run: |
-        container_id=$(az container list --resource-group devia_25 --query "[?name=='ragbotcontainer'].{Id:id}" -o tsv)
-        echo "::set-output name=container_id::$container_id"
-
-    - name: Delete existing container
-      if: steps.get_container_id.outputs.container_id != ''
-      run: |
-        az container delete --resource-group devia_25 --name ragbotcontainer --yes
-
-    - name: Run new container
-      run: |
-        az container create \
-        --resource-group devia_25 \
-        --name ragbotcontainer \
-        --image jobot1.azurecr.io/bot-test:latest \
-        --registry-username jobot1 \
-        --registry-password $(az acr credential show --name jobot1 --query passwords[0].value -o tsv) \
-        --environment-variables \
-          "BOT_TOKEN=${{ secrets.BOT_TOKEN }}" \
-          "OPENAI_API_TOKEN=${{ secrets.OPENAI_API_TOKEN }}" \
-          "BRAVE_TOKEN=${{ secrets.BRAVE_TOKEN }}" \
-        --cpu 1 \
-        --memory 1.5
+         - name: Deploy to Azure Container Instance
+           uses: azure/container-instance-action@v1
+           with:
+             resourceGroupName: '<resource-group>'
+             containerGroupName: 'mycontainer'
+             image: '<azure-registry>.azurecr.io/mydockerimage:latest'
+             registryLoginServer: '<azure-registry>.azurecr.io'
+             registryUsername: ${{ secrets.REGISTRY_USERNAME }}
+             registryPassword: ${{ secrets.REGISTRY_PASSWORD }}
