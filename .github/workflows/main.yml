@@ -1,36 +1,36 @@
- name: Docker Build and Deploy to Azure Container Instance
+name: Docker_Build
 
-   on:
-     push:
-       branches:
-         - main
+  on:
+    push:
+      branches:
+        - main
 
-   jobs:
-     build:
-       runs-on: ubuntu-latest
+  jobs:
+    build:
+      runs-on: ubuntu-latest
 
-       steps:
-         - name: Checkout code
-           uses: actions/checkout@v2
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v2
 
-         - name: Login to Azure
-           uses: azure/login@v1
-           with:
-             creds: ${{ secrets.AZURE_CREDENTIALS }}
+        - name: Login to Azure
+          uses: azure/login@v1
+          with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-         - name: Build Docker image
-           run: |
-             docker build -t mydockerimage .
-             docker login azure
-             docker tag mydockerimage <azure-registry>.azurecr.io/mydockerimage:latest
-             docker push <azure-registry>.azurecr.io/mydockerimage:latest
+        - name: Build Docker image
+          run: |
+            docker build -t bot-test .
+            docker login azure
+            docker tag bot-test jobot1.azurecr.io/bot-test:latest
+            docker push jobot1.azurecr.io/bot-test:latest
 
-         - name: Deploy to Azure Container Instance
-           uses: azure/container-instance-action@v1
-           with:
-             resourceGroupName: '<resource-group>'
-             containerGroupName: 'mycontainer'
-             image: '<azure-registry>.azurecr.io/mydockerimage:latest'
-             registryLoginServer: '<azure-registry>.azurecr.io'
-             registryUsername: ${{ secrets.REGISTRY_USERNAME }}
-             registryPassword: ${{ secrets.REGISTRY_PASSWORD }}
+        - name: Deploy to Azure Container Instance
+          uses: azure/container-instance-action@v1
+          with:
+            resourceGroupName: 'devia_25'
+            containerGroupName: 'mycontainer'
+            image: 'jobot1.azurecr.io/bot-test:latest'
+            registryLoginServer: 'jobot1.azurecr.io'
+            registryUsername: ${{ secrets.REGISTRY_USERNAME }}
+            registryPassword: ${{ secrets.REGISTRY_PASSWORD }}
